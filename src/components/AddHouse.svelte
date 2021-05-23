@@ -25,9 +25,9 @@ const dispatch = createEventDispatcher();
 </script>
 
 <form on:submit|preventDefault={handleAddHouse}>
-  <input type="text" placeholder="House Type" bind:value={houseType} />
-  <input type="text" placeholder="House Owner" bind:value={houseOwner} />
-  <input type="number" bind:value={rooms} placeholder="Number of Rooms">
+  <input required type="text" placeholder="House Type" bind:value={houseType} />
+  <input required type="text" placeholder="House Owner" bind:value={houseOwner} />
+  <input required type="number" bind:value={rooms} placeholder="Number of Rooms">
   <p>House Accessories:</p>
   <label>
     Air Conditioner
